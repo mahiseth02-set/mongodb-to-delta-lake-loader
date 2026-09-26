@@ -2,7 +2,7 @@
 
 A lightweight, **JVM-free** loader that turns a large, nested MongoDB collection into flat, typed **Delta Lake** tables. It uses Python, PyArrow and delta-rs. It supports parallel full loads, incremental upserts, and documents that move between *active* and *inactive*.
 
-> Demo on dummy business-listing data, modelled on a production pipeline I built that loads ~10 crore documents into 36 city-wise Delta tables. No company code or data is included.
+> A self-contained demo on dummy business-listing data, showing the patterns I use for large MongoDB-to-lake loads. No proprietary code or data is included.
 
 ## Architecture
 
