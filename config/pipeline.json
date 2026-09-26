@@ -1,0 +1,15 @@
+{
+  "source": {
+    "uri": "mongodb://localhost:27017/?readPreference=secondaryPreferred",
+    "database": "demo",
+    "collection": "businesses",
+    "workers": 4
+  },
+  "target": {
+    "active_path": "/data/lake/businesses_active",
+    "inactive_path": "/data/lake/businesses_inactive"
+  },
+  "staging_dir": "/data/lake/_staging",
+  "state_path": "/data/lake/_state/businesses_watermark.json",
+  "overlap_minutes": 5
+}
